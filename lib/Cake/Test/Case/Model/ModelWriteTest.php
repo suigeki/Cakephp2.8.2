@@ -7807,8 +7807,8 @@ class ModelWriteTest extends BaseModelTest {
 		$result = $item->saveMany($data, array('atomic' => false));
 
 		$this->assertCount(2, $result, '2 records should have been saved.');
-		$this->assertTrue($result[0], 'Both should have succeded');
-		$this->assertTrue($result[1], 'Both should have succeded');
+		$this->assertTrue($result[0], 'Both should have succeeded');
+		$this->assertTrue($result[1], 'Both should have succeeded');
 	}
 
 /**
@@ -7955,8 +7955,8 @@ class ModelWriteTest extends BaseModelTest {
 		$result = $syfile->saveAssociated($data, array('atomic' => false));
 
 		$this->assertCount(2, $result, '2 records should have been saved.');
-		$this->assertTrue($result['Syfile'], 'Both should have succeded');
-		$this->assertTrue($result['Item'], 'Both should have succeded');
+		$this->assertTrue($result['Syfile'], 'Both should have succeeded');
+		$this->assertTrue($result['Item'], 'Both should have succeeded');
 	}
 
 /**
@@ -7988,8 +7988,8 @@ class ModelWriteTest extends BaseModelTest {
 		$result = $item->saveAssociated($data, array('atomic' => false));
 
 		$this->assertCount(2, $result, '2 records should have been saved.');
-		$this->assertTrue($result['Syfile'], 'Both should have succeded');
-		$this->assertTrue($result['Item'], 'Both should have succeded');
+		$this->assertTrue($result['Syfile'], 'Both should have succeeded');
+		$this->assertTrue($result['Item'], 'Both should have succeeded');
 	}
 
 /**
